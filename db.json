@@ -1,0 +1,117 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "AcName": "Arturo Murray", 
+      "AcNumber": 100000409249,
+      "transactions":[
+          {"date": "01/01/2010", "debit": 2059, "credit": "-"},
+          {"date": "01/03/2010", "debit": 20050, "credit": "-"},
+          {"date": "01/06/2015", "debit": 3480, "credit": 700},
+          {"date": "01/01/2015", "debit": 20000, "credit": "-"},
+          {"date": "01/03/2018", "debit": 2000, "credit": 21000},
+          {"date": "01/06/2021", "debit": "-", "credit": 70090},
+          {"date": "01/01/2022", "debit": 20000, "credit": 900},
+          {"date": "01/03/2022", "debit": 235000, "credit": 5000},
+          {"date": "01/06/2022", "debit": "-", "credit": 700},
+          {"date": "01/01/2023", "debit": "-", "credit": 420},
+          {"date": "11/01/2023", "debit": "-", "credit": 5000},
+          {"date": "14/01/2023", "debit": 300, "credit": 7000}
+        ]
+    },
+    {
+      "id": 2,
+      "AcName": "Kymani Perry", 
+      "AcNumber": 100000457780,
+      "transactions":[
+          {"date": "01/01/2010", "debit": 20590, "credit": "-"},
+          {"date": "01/04/2010", "debit": 200500, "credit": "-"},
+          {"date": "01/03/2015", "debit": 3480, "credit": 9000},
+          {"date": "01/01/2015", "debit": 20000, "credit": "-"},
+          {"date": "01/03/2018", "debit": 2000, "credit": 10000},
+          {"date": "01/06/2021", "debit": "-", "credit": 4000},
+          {"date": "01/01/2022", "debit": 20000, "credit": 9900},
+          {"date": "01/03/2022", "debit": 200, "credit": 5000},
+          {"date": "01/06/2022", "debit": "-", "credit": 3200},
+          {"date": "01/01/2023", "debit": "-", "credit": 420},
+          {"date": "11/01/2023", "debit": "-", "credit": 5000},
+          {"date": "14/01/2023", "debit": 3000, "credit": 700}
+        ]
+    },
+    {
+      "id": 3,
+      "AcName": "John Doe", 
+      "AcNumber": 100000635049,
+      "transactions":[
+          {"date": "01/01/2019", "debit": 20000, "credit": 500},
+          {"date": "01/03/2019", "debit": 2000, "credit": 50000},
+          {"date": "01/06/2019", "debit": 30, "credit": 7000},
+          {"date": "01/01/2020", "debit": 20000, "credit": 5000},
+          {"date": "01/03/2020", "debit": 2000, "credit": 50000},
+          {"date": "01/06/20020", "debit": 3000, "credit": 7000},
+          {"date": "01/01/2021", "debit": 20990, "credit": 5077},
+          {"date": "01/03/2021", "debit": 2800, "credit": 50000},
+          {"date": "01/06/2021", "debit": 3000, "credit": 7000}
+        ]
+    },
+    {
+      "id": 4,
+      "AcName": "Amare Allen", 
+      "AcNumber": 100000499830,
+      "transactions":[
+          {"date": "01/01/2010", "debit": 20590, "credit": "-"},
+          {"date": "01/03/2010", "debit": 200500, "credit": "-"},
+          {"date": "01/06/2015", "debit": 3480, "credit": 7000},
+          {"date": "01/01/2015", "debit": 20000, "credit": "-"},
+          {"date": "01/03/2018", "debit": 200000, "credit": 50000},
+          {"date": "01/06/2021", "debit": "-", "credit": 7000},
+          {"date": "01/01/2022", "debit": 20000, "credit": 5000},
+          {"date": "01/03/2022", "debit": 200000, "credit": 5000},
+          {"date": "01/06/2022", "debit": "-", "credit": 7000},
+          {"date": "01/01/2023", "debit": "-", "credit": 4200},
+          {"date": "11/01/2023", "debit": "-", "credit": 50000},
+          {"date": "14/01/2023", "debit": 3000, "credit": 7000}
+        ]
+    },
+    {
+      "id": 5,
+      "AcName": "Sarai Bruce", 
+      "AcNumber": 100000411379,
+      "transactions":[
+          {"date": "01/01/2010", "debit": 20590, "credit": "-"},
+          {"date": "01/03/2010", "debit": 200500, "credit": "-"},
+          {"date": "01/06/2017", "debit": 3480, "credit": 7000},
+          {"date": "01/01/2017", "debit": 20000, "credit": "-"},
+          {"date": "01/03/2018", "debit": 200, "credit": 50000},
+          {"date": "01/06/2019", "debit": "-", "credit": 7000},
+          {"date": "01/01/2022", "debit": 20000, "credit": 5000},
+          {"date": "01/03/2022", "debit": 200000, "credit": "-"},
+          {"date": "01/06/2022", "debit": "-", "credit": 7000},
+          {"date": "01/01/2023", "debit": "-", "credit": 4200},
+          {"date": "11/01/2023", "debit": "-", "credit": 50000},
+          {"date": "14/01/2023", "debit": 3000, "credit": 7000}
+        ]
+    },
+    {
+      "id": 6,
+      "AcName": "Marcel Golden", 
+      "AcNumber": 100000489013,
+      "transactions":[
+          {"date": "01/01/2022", "debit": 20590, "credit": "-"},
+          {"date": "01/02/2022", "debit": 2000, "credit": "-"},
+          {"date": "01/03/2022", "debit": 3480, "credit": 7000},
+          {"date": "01/04/2022", "debit": 20000, "credit": "-"},
+          {"date": "01/05/2022", "debit": 200, "credit": 50000},
+          {"date": "01/06/2022", "debit": "-", "credit": 7000},
+          {"date": "01/07/2022", "debit": 20000, "credit": 5000},
+          {"date": "01/08/2022", "debit": 20000, "credit": 5000},
+          {"date": "01/09/2022", "debit": "-", "credit": 7000},
+          {"date": "01/10/2022", "debit": "-", "credit": 4200},
+          {"date": "11/11/2022", "debit": "-", "credit": 5000},
+          {"date": "14/12/2022", "debit": 3000, "credit": 7000}
+        ]
+    }
+  ]
+ }
+ 
+ 
