@@ -1,12 +1,13 @@
 import React from "react";
 
 function Statement({transactions}){
-    const dayTransaction = transactions.map((transaction) => {
+    const eachTransaction = transactions.map((transaction) => {
         return (
             <tr>
                 <td>{transaction.date}</td>
-                <td>{transaction.credit}</td>
-                <td>{transaction.debit}</td>
+                <td>{transaction.description}</td>
+                <td>{transaction.category}</td>
+                <td>{transaction.amount}</td>
             </tr>
         )
     })
@@ -25,10 +26,11 @@ function Statement({transactions}){
             <table id="customers">
                 <tr >
                     <th>Date</th>
-                    <th>Credit</th>
-                    <th>Debit</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
                   </tr>
-                  {dayTransaction}
+                  {eachTransaction}
             </table>
         </div>
     )
