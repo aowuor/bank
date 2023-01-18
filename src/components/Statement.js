@@ -1,37 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
+
 
 function Statement({transactions}){
-    console.log(transactions)
+    const[search, setSearch] = useState("")
+    
+
+    function getSearchData(e){
+        setSearch(e.target.value)
+    }
+ 
     const eachTransaction = transactions.map((transaction) => {
         return (
-            
-            <tr>
+            <thead>
+            <tr key={transaction.id}>
                 <td>{transaction.date}</td>
                 <td>{transaction.description}</td>
                 <td>{transaction.category}</td>
                 <td>{transaction.amount}</td>
             </tr>
+            </thead>
         )
     })
     return(
         <div className="statement">
             <div className="statement_header">
                 <h3>Bank Statement</h3>
-                <select name="" id="">
-                    <option>All</option>
-                    <option>Less than 3</option>
-                    <option>More than 3</option>
-                </select>
+                <form>
+                    <input type="text" placeholder="Search Category" name="category" onChange={getSearchData} />
+                </form>
 
             </div>
             
             <table id="customers">
+                <thead>
                 <tr >
                     <th>Date</th>
                     <th>Description</th>
                     <th>Category</th>
                     <th>Amount</th>
                   </tr>
+                  </thead>
                   {eachTransaction}
             </table>
         </div>

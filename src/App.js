@@ -3,7 +3,7 @@ import './App.css';
 import React, {useState, useEffect} from "react"
 import Details from './components/Details';
 import Statement from './components/Statement';
-import Transaction from './components/Transaction';
+import NewTransaction from './components/NewTransaction';
 
 function App() {
   const [transactions, setTransactions] = useState([])
@@ -15,11 +15,11 @@ function App() {
     .then((data) => setTransactions(() => data))
   }, [])
 
-  console.log(transactions)
-  function handleAddToStatement(params){
-    setTransactions(params)
+  function handleAddToStatement(newTransaction){
+    setTransactions([...transactions, newTransaction])
   }
-
+  console.log(transactions)
+  
 
   return (
     <div className="App">
@@ -27,11 +27,11 @@ function App() {
         <h1>Bank of Flatiron</h1>
       </div>
       <Details />
-      <Transaction transactions={transactions} submittedData={handleAddToStatement} />
-      <Statement transactions={transactions}/>
-      
+      <NewTransaction transactions={transactions} submittedData={handleAddToStatement} />
+      <Statement transactions={transactions} 
+      />
     </div>
-  ); 
+  );  
 }
 
 export default App;

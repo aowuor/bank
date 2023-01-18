@@ -1,16 +1,25 @@
 import React, {useState} from "react";
 
-function Transaction({submittedData, transactions}){
-    const [newTransaction, setNewTransaction] = useState([])
+function NewTransaction({submittedData, transactions}){
+    const [newTransaction, setNewTransaction] = useState({date:"", description:"", category:"", amount:""})
     
     function handleOnChange(e){
         e.preventDefault()
+        // const{date, description, category, amount} = e.target
         setNewTransaction({...newTransaction, [e.target.name]:e.target.value})
     }
 
     function handleSubmit(e){
         e.preventDefault()
-        submittedData(newTransaction)
+        fetch("http://localhost:3000/transactions", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newTransaction),
+        })
+            .then((r) => r.json())
+            .then((data) => submittedData(data))
     }
 
     return(
@@ -29,4 +38,4 @@ function Transaction({submittedData, transactions}){
 
 
 
-export default Transaction;
+export default NewTransaction;
