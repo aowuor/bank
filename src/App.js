@@ -6,29 +6,14 @@ import Statement from './components/Statement';
 import Transaction from './components/Transaction';
 
 function App() {
-  const [transactions, setTransactions] = useState([
-    { 
-      id: 1,
-      date: "2019-12-01",
-      description: "Paycheck from Bob's Burgers",
-      category: "Income",
-      amount: 1000
-    },
-    {
-    id: 1,
-    date: "2019-12-01",
-    description: "Paycheck from Bob's Burgers",
-    category: "Income",
-    amount: 1000
-  }
-  ])
+  const [transactions, setTransactions] = useState([])
 
   
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/transactions")
-  //   .then((res) => res.json())
-  //   .then((data) => setTransactions(() => data))
-  // }, [])
+  useEffect(() => {
+    fetch("http://localhost:3000/transactions")
+    .then((res) => res.json())
+    .then((data) => setTransactions(() => data))
+  }, [])
 
   console.log(transactions)
   function handleAddToStatement(params){
@@ -51,3 +36,18 @@ function App() {
 
 export default App;
 
+
+  //   { 
+  //     id: 1,
+  //     date: "2019-12-01",
+  //     description: "Paycheck from Bob's Burgers",
+  //     category: "Income",
+  //     amount: 1000
+  //   },
+  //   {
+  //   id: 1,
+  //   date: "2019-12-01",
+  //   description: "Paycheck from Bob's Burgers",
+  //   category: "Income",
+  //   amount: 1000
+  // }

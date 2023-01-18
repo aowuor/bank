@@ -1,8 +1,10 @@
 import React from "react";
 
 function Statement({transactions}){
+    console.log(transactions)
     const eachTransaction = transactions.map((transaction) => {
         return (
+            
             <tr>
                 <td>{transaction.date}</td>
                 <td>{transaction.description}</td>
