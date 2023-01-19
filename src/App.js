@@ -18,9 +18,7 @@ function App() {
   function handleAddToStatement(newTransaction){
     setTransactions([...transactions, newTransaction])
   }
-  console.log(transactions)
   
-
   return (
     <div className="App">
       <div className="header">
@@ -28,26 +26,10 @@ function App() {
       </div>
       <Details />
       <NewTransaction transactions={transactions} submittedData={handleAddToStatement} />
-      <Statement transactions={transactions} 
+      <Statement transactions={transactions}
       />
     </div>
   );  
 }
 
 export default App;
-
-
-  //   { 
-  //     id: 1,
-  //     date: "2019-12-01",
-  //     description: "Paycheck from Bob's Burgers",
-  //     category: "Income",
-  //     amount: 1000
-  //   },
-  //   {
-  //   id: 1,
-  //   date: "2019-12-01",
-  //   description: "Paycheck from Bob's Burgers",
-  //   category: "Income",
-  //   amount: 1000
-  // }

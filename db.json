@@ -97,6 +97,20 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
+    },
+    {
+      "date": "3/3/1010",
+      "description": "",
+      "category": "Fashion",
+      "amount": "",
+      "id": 15
+    },
+    {
+      "date": "2022/03/04",
+      "description": "Cake",
+      "category": "Food",
+      "amount": "2500",
+      "id": 16
     }
   ]
 }

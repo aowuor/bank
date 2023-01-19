@@ -4,12 +4,12 @@ import React, {useState} from "react";
 function Statement({transactions}){
     const[search, setSearch] = useState("")
     
-
-    function getSearchData(e){
+    function searchData(e){
         setSearch(e.target.value)
     }
- 
-    const eachTransaction = transactions.map((transaction) => {
+   
+   
+    const eachTransaction = transactions.filter((transaction) => transaction.category.toLowerCase().includes(search)).map((transaction) => {
         return (
             <thead>
             <tr key={transaction.id}>
@@ -26,7 +26,7 @@ function Statement({transactions}){
             <div className="statement_header">
                 <h3>Bank Statement</h3>
                 <form>
-                    <input type="text" placeholder="Search Category" name="category" onChange={getSearchData} />
+                    <input type="text" placeholder="Search Category" name="category" onChange={searchData} />
                 </form>
 
             </div>
